@@ -1,5 +1,7 @@
+/* global $ */
 ( function () {
-    var weddingDate = new Date( 2015, 06, 24, 11, 30 ),
+    'use strict';
+    var weddingDate = new Date( 2015, 6, 24, 11, 30 ),
         MINUTE_IN_MS = 1000 * 60,
         HOUR_IN_MS = MINUTE_IN_MS * 60,
         DAY_IN_MS = HOUR_IN_MS * 24,
@@ -98,10 +100,9 @@
         }
 
         $.ajax({
-            url: apiUrl,
-            success: success,
-            error: error
+            url : apiUrl,
+            success : success,
+            error : error
         });
     } ) ();
-
 } ) ();
